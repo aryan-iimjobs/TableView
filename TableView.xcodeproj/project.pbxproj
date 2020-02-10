@@ -18,6 +18,7 @@
 		DBA00C8C23F123D20018BA5D /* TableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA00C8B23F123D20018BA5D /* TableViewUITests.swift */; };
 		DBA00C9A23F133690018BA5D /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA00C9923F133690018BA5D /* Video.swift */; };
 		DBA00C9C23F134320018BA5D /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA00C9B23F134320018BA5D /* VideoModel.swift */; };
+		DBA00C9E23F1829A0018BA5D /* VideoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA00C9D23F1829A0018BA5D /* VideoInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		DBA00C8D23F123D20018BA5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBA00C9923F133690018BA5D /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		DBA00C9B23F134320018BA5D /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		DBA00C9D23F1829A0018BA5D /* VideoInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				DBA00C6623F123D10018BA5D /* AppDelegate.swift */,
 				DBA00C6823F123D10018BA5D /* SceneDelegate.swift */,
 				DBA00C6A23F123D10018BA5D /* ViewController.swift */,
+				DBA00C9D23F1829A0018BA5D /* VideoInfoViewController.swift */,
 				DBA00C9923F133690018BA5D /* Video.swift */,
 				DBA00C9B23F134320018BA5D /* VideoModel.swift */,
 				DBA00C6C23F123D10018BA5D /* Main.storyboard */,
@@ -273,6 +276,7 @@
 				DBA00C7123F123D10018BA5D /* TableView.xcdatamodeld in Sources */,
 				DBA00C6723F123D10018BA5D /* AppDelegate.swift in Sources */,
 				DBA00C6923F123D10018BA5D /* SceneDelegate.swift in Sources */,
+				DBA00C9E23F1829A0018BA5D /* VideoInfoViewController.swift in Sources */,
 				DBA00C9A23F133690018BA5D /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

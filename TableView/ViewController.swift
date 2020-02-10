@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let cellSpacingHeight: CGFloat = 5
+    var selectedVideo:Video?
     
     func numberOfSections(in tableView: UITableView) -> Int {
         videos.count
@@ -34,7 +35,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return cellSpacingHeight
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedVideo = videos[indexPath.section]
         
+        self.performSegue(withIdentifier: "goToInfo", sender: self)
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
@@ -50,6 +57,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let videoInfoViewController = segue.destination as! VideoInfoViewController
+        
+        videoInfoViewController.selectedVideo = self.selectedVideo
+    }
+    
     @IBOutlet weak var tableView: UITableView!
     var videos = [Video] ()
     
@@ -61,8 +75,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.tableView.dataSource = self
         self.tableView.delegate = self
     }
-    
-    
 
 }
 
